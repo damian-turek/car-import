@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff;
+  --background: #F9FBFD;
   --foreground: #171717;
 }
 
@@ -33,6 +33,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  color: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
