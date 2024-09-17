@@ -21,7 +21,10 @@
     padding: 15px 30px;
 
     .logo {
-      font-size: 32px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 27px;
     }
 
     nav {
