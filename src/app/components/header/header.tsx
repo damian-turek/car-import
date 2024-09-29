@@ -22,9 +22,6 @@ export const Header: React.FC = () => {
                     <Link href="#">Jak to działa?</Link>
                     <Link href="#">Dlaczego ze mną?</Link>
                     <Link href="#">Co sprawdzam?</Link>
-                    <Link href="#">Weryfikacja samochodu</Link>
-                    <Link href="#">Opinie</Link>
-                    <Link href="#">Galeria</Link>
                     <Link href="#">Kontakt</Link>
                 </nav>
             </div>
