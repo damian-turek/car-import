@@ -1,11 +1,12 @@
 @use "../../styles/colors";
 
-.whyMe {
-  display: flex;
-  align-items: center;
+.page {
 
-  h2 {
-    font-size: 50px;
+  .imageLayout {
+    display: flex;
+    align-items: center;
+
+    margin: 50px 0 0;
   }
 
   .list {
@@ -19,11 +20,4 @@
       color: colors.$seaBreeze;
     }
   }
-}
-
-.description {
-  margin:50px 0 0;
-
-  font-size: 20px;
-  text-align: justify;
 }
