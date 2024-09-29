@@ -1,0 +1,31 @@
+@use "../../styles/colors";
+
+.whyMe {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .list {
+    list-style-type: none;
+
+    font-size: 20px;
+
+    li {
+      margin: 15px 0 0;
+    }
+
+    span {
+      color: colors.$seaBreeze;
+    }
+  }
+}
+
+.description {
+  margin:50px 0 0;
+
+  font-size: 20px;
+  text-align: justify;
+}
