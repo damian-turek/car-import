@@ -1,0 +1,30 @@
+@use "../../styles/colors";
+
+.page {
+  font-size: 20px;
+
+  h2 {
+    margin: 0 0 50px;
+    font-size: 50px;
+  }
+
+  p {
+    margin: 20px 0 0;
+
+    &:nth-child(3) {
+      font-weight: bold;
+    }
+  }
+
+  .list {
+    list-style-type: none;
+
+    li {
+      margin: 15px 0 0;
+    }
+
+    span {
+      color: colors.$seaBreeze;
+    }
+  }
+}

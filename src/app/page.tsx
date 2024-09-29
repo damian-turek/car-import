@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import { Header, Footer, Hero, WhyMe, Wrapper } from '@/app/components'
+import { CarVerification, Header, Footer, Hero, WhyMe, Wrapper } from '@/app/components'
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
                 <Hero/>
                 <Wrapper>
                     <WhyMe/>
-
+                    <CarVerification/>
                 </Wrapper>
             </main>
             <Footer/>

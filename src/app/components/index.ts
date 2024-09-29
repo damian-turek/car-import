@@ -1,5 +1,6 @@
 export * from "./header"
 export * from "./footer"
 export * from "./whyMe"
+export * from "./carVerification"
 export * from "./wrapper"
 export * from "./hero"
