@@ -19,7 +19,6 @@ export const Header: React.FC = () => {
                 </Link>
                 <nav>
                     <Link href="#">Dlaczego auto z Niemiec?</Link>
-                    <Link href="#">Jak to działa?</Link>
                     <Link href="#">Dlaczego ze mną?</Link>
                     <Link href="#">Co sprawdzam?</Link>
                     <Link href="#">Kontakt</Link>
