@@ -1,3 +1,4 @@
+export * from "./actionSteps"
 export * from "./header"
 export * from "./footer"
 export * from "./whyMe"
