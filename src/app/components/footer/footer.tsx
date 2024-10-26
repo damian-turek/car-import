@@ -19,7 +19,7 @@ export const Footer: React.FC = () => (
                     <a href="#"> Polityką prywatności.</a>
                 </p>
                 <p>
-                    Copyright ©{new Date().getFullYear()} Wszelkie prawa zastrzeżone.
+                    Copyright © {new Date().getFullYear()} Wszelkie prawa zastrzeżone.
                 </p>
             </div>
         </div>

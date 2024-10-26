@@ -1,0 +1,29 @@
+@use "../../styles/colors";
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+
+  .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+
+    width: 20%;
+    height: 200px;
+
+    box-shadow: 0 0 15px -10px colors.$black;
+
+    background-color: colors.$white;
+
+    h4 {
+      padding: 15px 10px 0;
+
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+}
