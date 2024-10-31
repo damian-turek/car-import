@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.page}>
-                <Link href="#" className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <Image
                         src={Logo}
                         alt="logo"
@@ -18,9 +18,9 @@ export const Header: React.FC = () => {
                     Bartek-Auta.pl
                 </Link>
                 <nav>
-                    <Link href="#">Dlaczego auto z Niemiec?</Link>
-                    <Link href="#">Dlaczego ze mną?</Link>
-                    <Link href="#">Co sprawdzam?</Link>
+                    <Link href="/AutoZNiemiec">Dlaczego auto z Niemiec?</Link>
+                    <Link href="/DlaczegoZeMna">Dlaczego ze mną?</Link>
+                    <Link href="/CoSprawdzam">Co sprawdzam?</Link>
                     <Link href="#">Kontakt</Link>
                 </nav>
             </div>
