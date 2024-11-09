@@ -1,6 +1,9 @@
 import React from 'react'
+import WhatsApp from '../../../images/icons/whatsapp.svg'
+import Phone from '../../../images/icons/phone.svg'
 
 import styles from "./footer.module.scss"
+import Image from 'next/image'
 
 export const Footer: React.FC = () => (
     <footer className={styles.footer}>
@@ -9,7 +12,24 @@ export const Footer: React.FC = () => (
             <button>Formularz zamówieniowy</button>
 
             <div className={styles.contact}>
-                <a href="tel:4917672434997">Telefon: +49 176 724 34 997</a><a href="tel:4917672434997"> WhatsApp: +49 176 724 34 997</a>
+                <a href="tel:4917672434997">
+                    <Image
+                        src={Phone}
+                        width={30}
+                        height={30}
+                        alt="Phone"
+                    />
+                    +49 176 724 34 997
+                </a>
+                <a href="tel:4917672434997">
+                    <Image
+                        src={WhatsApp}
+                        width={40}
+                        height={40}
+                        alt="WhatsApp"
+                    />
+                    +49 176 724 34 997
+                </a>
             </div>
             <div className={styles.privacyPolicy}>
                 <p>
