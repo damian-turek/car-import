@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import { Hero, WhyMe, Wrapper, CarServices, ActionSteps } from '@/app/components'
+import { Hero, WhyMe, Wrapper, CarServices, ActionSteps, Gallery } from '@/app/components'
 
 export default async function Home() {
 
@@ -8,6 +8,7 @@ export default async function Home() {
             <main>
                 <Hero/>
                 <Wrapper>
+                    <Gallery/>
                     <WhyMe/>
                     <CarServices/>
                     <ActionSteps/>
