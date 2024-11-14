@@ -25,20 +25,22 @@
       transition: 0.3s;
     }
 
-    button {
+    .link {
       font-size: 18px;
       font-weight: 400;
 
       padding: 14px 20px;
 
       background-color: colors.$lightBlue;
+      color: colors.$white;
 
-      border-radius: 4px;
+      border-radius: 30px;
 
       transition: 0.3s;
 
       &:hover {
         background-color: colors.$darkerBlue;
+        color: colors.$white;
       }
     }
 

@@ -1,6 +1,10 @@
 @use "../../styles/colors";
 
 .page {
+  .subtitle {
+    font-size: 40px;
+    margin: 200px 0 50px;
+  }
 
   p {
     margin: 20px 0 0;

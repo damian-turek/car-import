@@ -3,7 +3,7 @@ import styles from "./carVerification.module.scss"
 
 export const CarVerification: React.FC = () => (
     <div className={styles.page}>
-        <h3>Weryfikacja samochodu</h3>
+        <h3 className={styles.subtitle}>Weryfikacja samochodu</h3>
         <p>Weryfikacja polega na:</p>
         <ul className={styles.list}>
             <li><span>&#10004;</span> osobistym sprawdzeniu samochodu w miejscu sprzedaży</li>

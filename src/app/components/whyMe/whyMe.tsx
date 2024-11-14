@@ -9,7 +9,7 @@ export const WhyMe: React.FC = () => (
     <div>
         <div className={styles.whyMe}>
             <div>
-            <h2>Dlaczego ze mną?</h2>
+            <h3 className={styles.subtitle}>Dlaczego ze mną?</h3>
                 <ul className={styles.list}>
                     <li><span>&#10004;</span> pasja od dzieciństwa</li>
                     <li><span>&#10004;</span> 15 lat doświadczenia w handlu samochodami</li>

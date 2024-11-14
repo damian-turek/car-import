@@ -16,7 +16,7 @@ export const CarServices = async() => {
 
     return (
         <div>
-            <h3>Co sprawdzam?</h3>
+            <h3 className={styles.subtitle}>Co sprawdzam?</h3>
             <div className={styles.page}>
                 {services.map((service) => (
                     <div className={styles.element} key={service.fields.id}>
