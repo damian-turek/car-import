@@ -15,7 +15,7 @@ export const Gallery = async () => {
 
     return (
         <div>
-            <h3>Galeria</h3>
+            <h3 className={styles.subtitle}>Galeria</h3>
             <div className={styles.gallery}>
                 {carGallery.map((car) => (
                     <div className={styles.photo} key={car.fields.id}>

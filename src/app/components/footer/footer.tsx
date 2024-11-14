@@ -4,12 +4,13 @@ import Phone from '../../../images/icons/phone.svg'
 
 import styles from "./footer.module.scss"
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const Footer: React.FC = () => (
     <footer className={styles.footer}>
         <div className={styles.page}>
             <h2>Skontaktuj się ze mną</h2>
-            <button>Formularz zamówieniowy</button>
+            <Link className={styles.link} href="/Kontakt">Formularz zamówieniowy</Link>
 
             <div className={styles.contact}>
                 <a href="tel:4917672434997">

@@ -4,7 +4,7 @@ import styles from "./actionSteps.module.scss"
 
 export const ActionSteps: React.FC = () => (
     <div className={styles.page}>
-        <h3>Jak to działa?</h3>
+        <h3 className={styles.subtitle}>Jak to działa?</h3>
         <section>
             <div>
                 <span>1</span><p> po zgłoszeniu Klient otrzymuję w przeciągu 24h w dni robocze maksymalnie 3 oferty aut</p>
