@@ -1,9 +1,15 @@
 @use "../../styles/colors";
+@use "../../styles/media";
 
 .page {
   .subtitle {
     font-size: 40px;
     margin: 200px 0 50px;
+
+    @include media.mobile {
+      font-size: 25px;
+      margin: 20px 0;
+    }
   }
 
   section {
@@ -12,6 +18,12 @@
       align-items: center;
 
       margin: 0 0 15px ;
+
+      @include media.mobile {
+        font-size: 15px;
+
+        align-items: normal;
+      }
 
       span {
         display: flex;
@@ -22,7 +34,6 @@
 
         padding: 0 20px;
         margin: 0 20px 0 0;
-
 
         border: 3px solid colors.$seaBreeze;
         border-radius: 25px;
