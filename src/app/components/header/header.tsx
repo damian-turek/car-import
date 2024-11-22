@@ -1,7 +1,7 @@
 import styles from "./header.module.scss"
 import Link from 'next/link'
 import React from 'react'
-import {HamburgerMenu} from "@/app/components/HamburgerMenu";
+import {HamburgerMenu} from "../hamburgerMenu";
 
 export const Header: React.FC = () => {
     return (
