@@ -1,13 +1,13 @@
-import { Contact, Wrapper } from '@/app/components'
+import {Contact, PageWrapper } from '@/app/components'
 
 import styles from "../page.module.scss";
 export default function Home() {
     return (
         <div className={styles.page}>
             <main>
-                <Wrapper>
+                <PageWrapper>
                     <Contact/>
-                </Wrapper>
+                </PageWrapper>
             </main>
         </div>
     );

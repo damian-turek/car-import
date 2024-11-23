@@ -1,4 +1,5 @@
 @use "../../styles/colors";
+@use "../../styles/media";
 
 .hero {
   position: relative;
@@ -7,6 +8,10 @@
 
   height: 90vh;
   width: 100%;
+
+  @include media.mobile {
+    height: 55vh;
+  }
 
   .motto {
     position: relative;
@@ -20,6 +25,12 @@
       width: 500px;
 
       font-size: 60px;
+
+      @include media.mobile {
+        width: 65%;
+
+        font-size: 35px;
+      }
     }
 
     p {
@@ -29,6 +40,12 @@
       font-weight: 300;
 
       width: 700px;
+
+      @include media.mobile {
+        width: 80%;
+
+        font-size: 15px;
+      }
     }
 
     .button {
@@ -47,6 +64,12 @@
         transition: 0.3s;
 
         background-color: colors.$darkerBlue;
+      }
+
+      @include media.mobile {
+        padding: 10px 20px;
+
+        font-size: 20px;
       }
     }
   }

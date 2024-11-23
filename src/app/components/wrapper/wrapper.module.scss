@@ -1,11 +1,21 @@
+@use "../../styles/media";
+
 .page {
   width: 80%;
 
   & > * {
     margin: 120px 0 0;
 
+    @include media.mobile {
+      margin: 0;
+    }
+
     &:last-child {
       margin: 120px 0 100px;
+
+      @include media.mobile {
+        margin: 50px 0 40px;
+      }
     }
   }
 }

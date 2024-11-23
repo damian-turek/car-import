@@ -1,8 +1,18 @@
 @use "../../styles/colors";
+@use "../../styles/media";
 
 .page {
   display: flex;
   flex-wrap: wrap;
+
+  margin: 20px 0 0;
+
+  @include media.mobile {
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+  }
 
   .element {
     display: flex;
@@ -19,16 +29,32 @@
 
     background-color: colors.$white;
 
+    @include media.mobile {
+      width: 130px;
+      height: 150px;
+
+      margin: 10px;
+    }
+
     h4 {
       padding: 15px 10px 0;
 
       text-align: center;
       font-size: 25px;
+
+      @include media.mobile {
+        font-size: 15px;
+      }
     }
   }
 }
 
 .subtitle {
   font-size: 40px;
-  margin: 200px 0 50px;
+  margin: 30px 0 30px;
+
+  @include media.mobile {
+    font-size: 25px;
+    margin: 0 0 20px;
+  }
 }

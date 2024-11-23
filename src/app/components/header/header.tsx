@@ -1,6 +1,7 @@
 import styles from "./header.module.scss"
 import Link from 'next/link'
 import React from 'react'
+import {HamburgerMenu} from "../hamburgerMenu";
 
 export const Header: React.FC = () => {
     return (
@@ -10,10 +11,11 @@ export const Header: React.FC = () => {
                     Bartek-Auta.pl
                 </Link>
                 <nav>
-                    <Link href="/DlaczegoZeMna">Dlaczego ze mną?</Link>
-                    <Link href="/AutoZNiemiec">Dlaczego auto z Niemiec?</Link>
-                    <Link href="/CoSprawdzam">Co sprawdzam?</Link>
-                    <Link href="/Kontakt">Kontakt</Link>
+                    <Link className={styles.navItem} href="/DlaczegoZeMna">Dlaczego ze mną?</Link>
+                    <Link className={styles.navItem} href="/AutoZNiemiec">Dlaczego auto z Niemiec?</Link>
+                    <Link className={styles.navItem} href="/CoSprawdzam">Co sprawdzam?</Link>
+                    <Link className={styles.navItem} href="/Kontakt">Kontakt</Link>
+                    <HamburgerMenu/>
                 </nav>
             </div>
         </header>

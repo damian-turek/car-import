@@ -1,16 +1,33 @@
 @use "../../styles/colors";
+@use "../../styles/media";
 
 .page {
+
+
+  text-align: center;
+
   .imageLayout {
     display: flex;
     align-items: center;
 
     margin: 50px 0 0;
+
+    @include media.mobile {
+      flex-direction: column;
+
+      img {
+        margin: 20px 0 0;
+
+        width: 100%;
+        height: auto;
+
+        border-radius: 20px;
+      }
+    }
   }
 
   .subtitle {
     font-size: 40px;
-    margin: 200px 0 50px;
   }
 
   .list {
@@ -27,5 +44,13 @@
 
   h3 {
     margin: 50px 0;
+
+    @include media.mobile {
+      margin: 30px 0 ;
+
+      &:first-child {
+        margin: 0 0 30px;
+      }
+    }
   }
 }
