@@ -5,9 +5,13 @@
   display: flex;
   flex-wrap: wrap;
 
+  margin: 20px 0 0;
+
   @include media.mobile {
     align-items: center;
     justify-content: center;
+
+    margin: 0;
   }
 
   .element {
@@ -47,10 +51,10 @@
 
 .subtitle {
   font-size: 40px;
-  margin: 120px 0 50px;
+  margin: 30px 0 30px;
 
   @include media.mobile {
     font-size: 25px;
-    margin: 20px 0;
+    margin: 0 0 20px;
   }
 }

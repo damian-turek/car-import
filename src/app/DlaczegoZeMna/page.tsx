@@ -1,13 +1,13 @@
-import { WhyMe, Wrapper } from '@/app/components'
+import {PageWrapper, WhyMe } from '@/app/components'
 
 import styles from "../page.module.scss";
 export default function Home() {
     return (
         <div className={styles.page}>
             <main>
-                <Wrapper>
+                <PageWrapper>
                     <WhyMe/>
-                </Wrapper>
+                </PageWrapper>
             </main>
         </div>
     );
