@@ -1,0 +1,60 @@
+name: main
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  repository_dispatch:
+    types: [ contentful-publish ]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: cache node modules
+        uses: actions/cache@v3
+        id: cache-node-modules
+        with:
+          key: cache-node-modules-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          path: node_modules
+
+      - name: install
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: build
+        env:
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          RECIPMENT_EMAIL: ${{ secrets.RECIPMENT_EMAIL }}
+        run: npm run build
+
+      - name: deploy
+        if: ${{ github.ref == 'refs/heads/master' }}
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          sudo apt-get -y install lftp
+          lftp << !
+            open -u $FTP_USER,$FTP_PASSWORD ftp://$FTP_HOST
+            mirror --delete --reverse --parallel=20 --verbose=3 --exclude-glob .pureftpd-upload* out/ greenboxeurope.eu/
+          !
