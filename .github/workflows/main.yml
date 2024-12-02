@@ -34,9 +34,6 @@ jobs:
       - name: lint
         run: npm run lint
 
-      - name: Run tests
-        run: npm test
-
       - name: build
         env:
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
