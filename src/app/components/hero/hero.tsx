@@ -10,7 +10,7 @@ export const Hero: React.FC = () => (
     <div className={styles.hero}>
         <div className={styles.motto}>
             <h2>Znajdź ze mną wymarzone auto</h2>
-            <p>Zajmuję się sprowadzaniem samochodów z Niemiec od 15 lat. Zaufało mi ponad 120 klientów.</p>
+            <p>Zajmuję się sprowadzaniem samochodów z Niemiec od 20 lat. Zaufało mi ponad 120 klientów.</p>
             <Link href="/Kontakt">
                 <div className={styles.button}>Skontaktuj się ze mną</div>
             </Link>
