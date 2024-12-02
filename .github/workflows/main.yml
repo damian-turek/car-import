@@ -56,5 +56,5 @@ jobs:
           sudo apt-get -y install lftp
           lftp << !
             open -u $FTP_USER,$FTP_PASSWORD ftp://$FTP_HOST
-            mirror --delete --reverse --parallel=20 --verbose=3 --exclude-glob .pureftpd-upload* out/ greenboxeurope.eu/
+            mirror --delete --reverse --parallel=20 --verbose=3 --exclude-glob .pureftpd-upload* out/ bartek-auta.pl/
           !
