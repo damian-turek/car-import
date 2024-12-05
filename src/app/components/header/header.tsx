@@ -11,10 +11,10 @@ export const Header: React.FC = () => {
                     Bartek-Auta.pl
                 </Link>
                 <nav>
-                    <Link className={styles.navItem} href="/DlaczegoZeMna">Dlaczego ze mną?</Link>
-                    <Link className={styles.navItem} href="/AutoZNiemiec">Dlaczego auto z Niemiec?</Link>
-                    <Link className={styles.navItem} href="/CoSprawdzam">Co sprawdzam?</Link>
-                    <Link className={styles.navItem} href="/Kontakt">Kontakt</Link>
+                    <Link className={styles.navItem} href="/dlaczego-ze-mna">Dlaczego ze mną?</Link>
+                    <Link className={styles.navItem} href="/dlaczego-auto-z-niemiec">Dlaczego auto z Niemiec?</Link>
+                    <Link className={styles.navItem} href="/co-sprawdzam">Co sprawdzam?</Link>
+                    <Link className={styles.navItem} href="/kontakt">Kontakt</Link>
                     <HamburgerMenu/>
                 </nav>
             </div>
