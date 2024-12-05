@@ -10,7 +10,7 @@ export const Footer: React.FC = () => (
     <footer className={styles.footer}>
         <div className={styles.page}>
             <h2>Skontaktuj się ze mną</h2>
-            <Link className={styles.link} href="/Kontakt">Formularz zamówieniowy</Link>
+            <Link className={styles.link} href="/kontakt">Formularz zamówieniowy</Link>
 
             <div className={styles.contact}>
                 <a href="tel:4917672434997">
