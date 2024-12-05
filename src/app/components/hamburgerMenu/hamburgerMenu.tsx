@@ -19,10 +19,10 @@ export const HamburgerMenu = () => {
             <div className={`${styles.bar} ${isOpen ? styles.open : ''}`}></div>
             {isOpen && (
                 <div className={styles.menu}>
-                    <Link href="/DlaczegoZeMna" className={styles.menuItem}>Dlaczego ze mną?</Link>
-                    <Link href="/AutoZNiemiec" className={styles.menuItem}>Dlaczego auto z Niemiec?</Link>
-                    <Link href="/CoSprawdzam" className={styles.menuItem}>Co sprawdzam?</Link>
-                    <Link href="/Kontakt" className={styles.menuItem}>Kontakt</Link>
+                    <Link href="/dlaczego-ze-mna" className={styles.menuItem}>Dlaczego ze mną?</Link>
+                    <Link href="/dlaczego-auto-z-niemiec" className={styles.menuItem}>Dlaczego auto z Niemiec?</Link>
+                    <Link href="/co-sprawdzam" className={styles.menuItem}>Co sprawdzam?</Link>
+                    <Link href="/kontakt" className={styles.menuItem}>Kontakt</Link>
 
                 </div>
             )}
